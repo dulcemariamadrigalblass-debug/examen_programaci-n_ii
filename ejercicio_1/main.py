@@ -1,6 +1,4 @@
 
-from ejercicio_1.main import Producto, calcularTotal, mostrarTotal 
-
 class Producto(object): 
     def __init__(self, nombre, precio): 
         self.nombre = nombre
