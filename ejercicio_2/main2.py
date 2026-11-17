@@ -26,3 +26,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+class Calculadora(object):
+    def __init__(self, digito1, digito2):
+    
+        self.digito1 = digito1
+        self.digito2 = digito2
+        self.resultado = 0
+
+
+    def calcular_suma(self):
+        return self.digito1 + self.digito2
+   def calcular_resta(self):
+        return self.digito1 - self.digito2
+
+    def mostrarRsultado(self):
+        return f"({self.digito1} h): ${self.digito2):.2f}"
