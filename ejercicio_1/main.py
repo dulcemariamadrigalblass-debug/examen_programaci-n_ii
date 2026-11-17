@@ -20,3 +20,18 @@ def main():
    
 if __name__ == "__main__":
     main()
+
+
+class Estacionamiento(object):
+    def __init__(self, horas):
+    
+        self.horas = horas
+        self.validar_horas()
+
+
+    def calcular_pago(self):
+        return self.horas 
+
+    def mostrarRecibo(self):
+        return f"({self.horas} h): ${self.calcular_pago():.2f}"
+
